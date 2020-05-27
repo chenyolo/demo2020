@@ -9,26 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>consumer-order80</artifactId>
+    <artifactId>api-common</artifactId>
 
     <dependencies>
-        <!--公共模块-->
-        <dependency>
-            <groupId>cn.chen.demo</groupId>
-            <artifactId>api-common</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
         <!-- devtools -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -36,7 +19,6 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-
         <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -44,11 +26,11 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- test -->
+        <!-- hutool 超好用的工具类 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.1.0</version>
         </dependency>
     </dependencies>
 

@@ -14,6 +14,8 @@
     <modules>
         <module>provider-payment8001</module>
         <module>consumer-order80</module>
+        <module>eureka7001</module>
+        <module>api-common</module>
     </modules>
 
     <!--统一管理jar包和版本-->
@@ -29,7 +31,7 @@
         <mybatis.spring.boot.verison>1.3.0</mybatis.spring.boot.verison>
     </properties>
 
-    <!-- dependencyManagement 父工程同一版本 -->
+    <!-- dependencyManagement 父工程同一版本:子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version -->
     <dependencyManagement>
         <dependencies>
             <!-- springboot 与 springcloud 版本需要搭配 以下是官方推荐的搭配-->
