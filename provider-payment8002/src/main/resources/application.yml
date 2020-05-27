@@ -1,5 +1,5 @@
 server:
-  port: 8001 # 端口号
+  port: 8002 # 端口号
 
 spring:
   # 应用名称
@@ -28,8 +28,8 @@ eureka:
       #defaultZone: http://localhost:7001/eureka //单机版
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
   instance:
-    instance-id: payment8001
-    prefer-ip-address: true
+    instance-id: payment8002
+    prefer-ip-address: true # IP地址提示
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml #mapper文件

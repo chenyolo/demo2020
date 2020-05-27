@@ -28,6 +28,7 @@ public class PaymentController {
 	@Value("${server.port}")
 	private String serverPort;
 
+
 	@PostMapping("/save")
 	public CommonResult<Payment> save(Payment payment){
 		int result = paymentService.save(payment);
