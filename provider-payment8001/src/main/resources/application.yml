@@ -4,7 +4,7 @@ server:
 spring:
   # 应用名称
   application:
-    name: cloud-payment-service # 服务名称
+    name: payment-service # 服务名称
 
   # 数据源
   datasource:
@@ -18,6 +18,14 @@ spring:
   devtools:
     restart:
       enabled: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      #defaultZone: http://localhost:7001/eureka //单机版
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml #mapper文件
