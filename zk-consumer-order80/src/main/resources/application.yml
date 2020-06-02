@@ -1,0 +1,12 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: zk-consumer-order
+  cloud:
+    zookeeper:
+      connect-string: 192.168.221.129:2181 #zk注册中心地址
+zk:
+  server:
+    url: http://zk-provider-payment
